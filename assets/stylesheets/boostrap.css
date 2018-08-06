@@ -1,5 +1,5 @@
 body {
-  background: green;
+  background: grey;
 }
 
 
@@ -8,5 +8,12 @@ margin-top: 85px;
 }
 
 .wrapper {
-  margin-top: 1000px;
+  margin-top: 50px;
+}
+
+.content {
+  width: 100%;
+  background-color: yellow;
+  display: block;
+  height: 200px;
 }

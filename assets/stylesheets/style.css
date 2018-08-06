@@ -32,20 +32,20 @@ nav.container {
   font-weight: 500;
   border-top: 45px;
   float: right;
-  color: #646881;
 }
 
 nav li {
   display: inline;
   padding-right: 20px;
+  color: #646881;
 }
 
-nav a:link {
+ nav a:link {
   color: #646881;
 }
 
 nav a:hover {
-  color: #646881
+  color: #646881;
   font-style: italic;
 }
 
@@ -67,7 +67,7 @@ img.logo{
 
 .btn {
 background-color: #646881;
-color: #ffffff;
+color: #ffffff; !Important
 width: 75px;
 border-radius: 4%;
 border: none;
@@ -76,17 +76,17 @@ text-decoration: inherit;
 
 .btn:hover {
   background-color: #646881;
-  color: #ffffff;
+  color: #ffffff; !Important
 }
 
 .btn:active {
   background-color: #646881;
-  color: #ffffff;
+  color: #ffffff; !Important
 }
 
 .btn:active {
   background-color: #646881;
-  color: #ffffff;
+  color: #ffffff; !Important
 }
 
 /* Header ends */
@@ -149,11 +149,54 @@ h5{
 
 /* Carousel End */
 
+
+/* DISCOGRAPHY page */
+
+img.card-img-top {
+  max-width: 100%;
+  max-height: auto;
+  /* border-left: 140px; */
+}
+
+.card {
+position: relative;
+margin: 2%;
+border-style: dotted;
+border-width: 1px;
+border-color: #646881;
+border-radius: 1%;
+/* background-color: blue; */
+}
+
+.card.column{
+  float: left;
+  width: 29%;
+  height: 550px;
+
+}
+
+.card-body {
+  margin: 4%;
+}
+
+.star-rating{
+  position: absolute;
+  bottom: 0%;
+  margin: 8%;
+  padding-top: 2%;
+  border-top-style: dotted;
+  border-top-width: 1px;
+  border-color: #646881;
+  border-spacing: 2px;
+  border-radius: 1%;
+}
+
+
 /* Footer */
 
 footer {
    position: absolute;
-   height: 70px;
+   height: 100px;
    right: 0;
    bottom: 0;
    left: 0;
@@ -168,44 +211,10 @@ footer li {
     padding-right: 30px;
 }
 
-/* DISCOGRAPHY page */
 
-img.card-img-top {
-  max-width: 100%;
-  max-height: auto;
-  /* border-left: 140px; */
+.social-icons-list {
+  float: left
 }
-
-.card {
-margin: 2%;
-border-style: dotted;
-border-width: 1px;
-border-color: #646881;
-border-radius: 1%;
-/* background-color: blue; */
-}
-
-.card.column{
-  float: left;
-  width: 29%;
-}
-
-.card-body {
-  margin: 4%;
-}
-
-.star-rating{
-  margin: 8%;
-  padding-top: 2%;
-  border-top-style: dotted;
-  border-top-width: 1px;
-  border-color: #646881;
-  border-spacing: 2px;
-  border-radius: 1%;
-}
-
-
-/* Footer */
 
 img.social-icon {
 float: center;
