@@ -11,6 +11,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16x16.png">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/stylesheets/lightbox.min.css" type="text/css" />
   <!-- <link rel="stylesheet" type="text/css" href="./assets/stylesheets/flexboxgrid.min.css" /> -->
   <link href="./assets/stylesheets/style.css" rel="stylesheet" type="text/css" />
 </head>
@@ -45,6 +46,101 @@
     </nav>
   </header>
   <!-- header ends -->
+
+
+    <!-- Shop Gallery -->
+<div class="main">
+<!-- Filter -->
+<div class="container">
+<div class="row">
+  <ul class="filterlist col-xs-12">
+  <li><button class="btn active" data-filter="old">Old</button></li>
+  <li><button class="btn" data-filter="new">New</button></li>
+</ul>
+</div>
+
+    <!--Gallery  -->
+    <div class="row">
+      <div class="filtr-container">
+        <div class="filtr-item col-xs-6" data-category="new">
+          <img class="img-responsive text-center" src="./assets/images/product_promo.png" alt="new">
+        </div>
+        <div class="filtr-item col-xs-3" data-category="new">
+          <img class="img-responsive" src="./assets/images/product_2.png" alt="new" >
+        </div>
+      <div class="filtr-item col-xs-3" data-category="new">
+          <img class="img-responsive" src="./assets/images/product_3.png" alt="new">
+      </div>
+        <div class="filtr-item col-xs-3" data-category="old">
+          <img class="img-responsive" src="./assets/images/product_4.png" alt="old" >
+      </div>
+        <div class="filtr-item col-xs-3" data-category="new">
+          <img class="img-responsive" src="./assets/images/product_1.png" alt="new">
+        </div>
+      </div>
+        <div class="filtr-item col-xs-3" data-category="old">
+          <img class="img-responsive" src="./assets/images/product_5.png" alt="old">
+      </div>
+        <div class="filtr-item col-xs-3" data-category="new">
+          <img class="img-responsive" src="./assets/images/product_6.png" alt="new">
+      </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- GALLERY END -->
+
+
+
+
+
+  <!-- footer-->
+  <footer class="container" role="footer">
+    <!-- social icons -->
+  <ol class="social-icons-list">
+    <h6>
+      Follow Us
+    </h6>
+    <li>
+      <a href="#"><img border="0" class="social-icon" src="./assets/images/social-facebook.png" alt="facebook logo"></a>
+    </li>
+    <li>
+      <a href="#"><img border="0" class="social-icon" src="./assets/images/social-twitter.png" alt="twitter logo"></a>
+    </li>
+    <li>
+      <a href="#"><img border="0" class="social-icon" src="./assets/images/social-google+.png" alt="google+ logo"></a>
+    </li>
+    <li>
+      <a href="#"><img border="0" class="social-icon" src="./assets/images/social-instagram.png" alt="instagram logo"></a>
+    </li>
+  </ol>
+
+  <!-- signup form -->
+  <div class="input-container">
+  <form action="/action_page.php">
+    <h6>Get Updates</h6>
+    <div>
+      <i class="fa fa-user icon"></i>
+      <input class="signup-field" type="text" placeholder="email" name="usrnm">
+      <button type="submit" class="btn">Sign up</button>
+    </div>
+  </div>
+  </footer>
+
+<!-- JAVASCRIPT for filter  -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./assets/javascripts/jquery.filterizr.min.js"></script>
+    <script>
+    var filterizd = $('.filtr-container').filterizr({});
+    </script>
+
 
 
 </body>

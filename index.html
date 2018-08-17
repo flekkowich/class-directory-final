@@ -48,12 +48,79 @@
 </header>
 <!-- header ends -->
 
-  <main>
-    <div class="container col-sx-9">
+  <div class="main">
+    <div class="container">
       <div class="row">
-      <h1>Index</h1>
+      <h1>The Many Bowie Personas</h1>
       </div>
     </div>
+
+
+    <section class="container-index col-xs-12">
+      <div class="row">
+        <!--carousel -->
+      <div id="myCarousel" class="carousel slide carousel-left" data-ride="carousel">
+
+        <!-- Indicators 3 buttons -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0"></li>
+          <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides Content for Slides -->
+          <div class="row">
+
+        <section class="carousel-inner">
+      
+          <!-- First slider  -->
+          <div class="item">
+            <div class="sliderimage">
+            <img src="./assets/images/intro_aladinsane.png" alt="Aladin Sane" class="center">
+          </div>
+          </div>
+          <!-- End - First slider  -->
+
+          <!-- Second slider  -->
+          <div class="item active">
+            <div class="sliderimage">
+              <img src="./assets/images/Intro_davidjones.png" alt="Davy jones Live" class="center">
+            </div>
+          </div>
+          <!-- End - Second slider  -->
+
+          <!-- Third slider  -->
+          <div class="item">
+            <div class="sliderimage">
+            <img src="./assets/images/intro_ziggystardust.jpg" alt="Ziggy Stardust Image" class="center">
+          </div>
+        </div>
+        <!-- End - Third slider  -->
+
+
+        <!-- Controls for Indicators -->
+        <div class="row">
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="sr-only">Previous</span>
+         </a>
+         <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="sr-only">Next</span>
+         </a>
+       </div>
+     </div>
+   </div>
+ </div>
+
+</section>
+    </section>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
   </main>
 
 <!-- main content section-->
@@ -64,9 +131,9 @@
 <footer class="container" role="footer">
   <!-- social icons -->
 <ol class="social-icons-list">
-  <p>
+  <h6>
     Follow Us
-  </p>
+  </h6>
   <li>
     <a href="#"><img border="0" class="social-icon" src="./assets/images/social-facebook.png" alt="facebook logo"></a>
   </li>
@@ -82,13 +149,16 @@
 </ol>
 
 <!-- signup form -->
+<div class="input-container">
 <form action="/action_page.php">
   <h6>Get Updates</h6>
-  <div class="input-container">
+  <div>
     <i class="fa fa-user icon"></i>
     <input class="signup-field" type="text" placeholder="email" name="usrnm">
     <button type="submit" class="btn">Sign up</button>
   </div>
+</div>
+
 
 </footer>
 

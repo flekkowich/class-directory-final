@@ -93,6 +93,20 @@ text-decoration: inherit;
 
 
 /* Main Content */
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
 
 
 h1 {
@@ -120,37 +134,153 @@ h5{
   line-height: 25px;
 }
 
-/* Carousel */
+
+/* Media */
+.column.media {
+    float: left;
+    width: 25%;
+    max-height: 50%;
+    /* background-color: yellow; */
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column.media {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.media {
+        width: 100%;
+    }
+}
+
+.content {
+  background-color: white;
+  padding: 10px;
+  margin-left: 15%;
+}
+
+/* TOUR DATES */
+
+table.tour {
+  /* background-color: yellow; */
+  text-align: left;
+  width: 70%;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+table.tour, td, th {
+  /* background-color: yellow; */
+border: 0.5px solid black;
+border-color: #646881;
+height: 50px;
+padding-left: 15px;
+}
+
+.card.tour {
+  float: left;
+  width: 29%;
+  height: 450px;
+  /* background-color: yellow; */
+}
+
+.tourwatch{
+  position: absolute;
+  bottom: 0%;
+  margin: 5%;
+  padding-top: %;
+  border-top-style: dotted;
+  border-top-width: 1px;
+  /* border-color: #646881; */
+  border-spacing: 2px;
+  border-radius: 1%;
+}
+
+
+/* CAROUSEL */
+
+.carousel-indicators  {
+  border-top: 10%;
+}
 
 .carousel-indicators li {
     display: inline-block;
     background-color: #646881;
-    border: none;
     opacity: 0.2;
 }
 
 .carousel-indicators .active {
+    border: 1%;
     background-color: #646881;
-    border: none;
     opacity: 1;
 }
 
 .carousel img {
-     width: 75%;
+     border: 1%;
+     padding: 1%;
+     max-width: 700px;
+     max-height: 400px;
+     overflow: hidden;
 }
+
 
 .carousel-inner {
-
+  margin: 2%;
+  margin-bottom: 50px;
 }
+
+
+.about-text {
+  float: right;
+  /* white-space: nowrap;
+  overflow: hidden; */
+}
+
+/* .slider.col-xs-8 {
+  margin: 0%; !Important
+  border: 0%; !Important
+   background-color: yellow;
+} */
 
 /* .carousel-left {
   width: 100%;
 } */
 
-/* Carousel End */
+/* CAROUSEL END */
 
 
-/* DISCOGRAPHY page */
+/* SHOP START */
+
+.filtr-item {
+  float: left;
+  background-color: white;
+  padding: 1%;
+}
+/*
+.filtr-container {
+    width: 100%;
+    max-height: 100px;
+    background-color: yellow;
+} */
+
+.filterlist, li {
+  display: inline;
+  text-align: center;
+  padding-right: 30px;
+}
+
+/* DISCOGRAPHY START */
 
 img.card-img-top {
   max-width: 100%;
@@ -168,11 +298,10 @@ border-radius: 1%;
 /* background-color: blue; */
 }
 
-.card.column{
+.card.column {
   float: left;
   width: 29%;
   height: 550px;
-
 }
 
 .card-body {
@@ -190,19 +319,18 @@ border-radius: 1%;
   border-spacing: 2px;
   border-radius: 1%;
 }
+/* DISCOGRAPHY END */
 
-
-/* Footer */
+/* FOOTER */
 
 footer {
-   position: absolute;
-   height: 100px;
-   right: 0;
+   margin-top: 2%;
+   /* background-color: yellow; */
+   height: 70px;
+   padding: 2%;
+   align: center;
    bottom: 0;
-   left: 0;
-   padding: 1rem;
-   background-color: #efefef;
-   text-align: center;
+
 }
 
 footer li {
@@ -211,9 +339,17 @@ footer li {
     padding-right: 30px;
 }
 
+.input-container {
+  float: right;
+  margin-right: 5%;
+  text-align: center;
+
+}
+
 
 .social-icons-list {
-  float: left
+  float: left;
+  text-align: center;
 }
 
 img.social-icon {
