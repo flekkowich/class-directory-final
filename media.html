@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- <link rel="stylesheet" type="text/css" href="./assets/stylesheets/flexboxgrid.min.css" /> -->
   <link href="./assets/stylesheets/style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="./assets/stylesheets/lightbox.min.css" type="text/css" />
+  <link rel="stylesheet" href="./assets/stylesheets/lightbox.css" type="text/css" />
 </head>
 
 
@@ -52,27 +52,31 @@
 <div class="row">
   <div class="column media col-xs-6">
     <div class="content promo">
-<iframe width="560" height="380" src="https://www.youtube.com/embed/FiK7s_0tGsg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="320" src="https://www.youtube.com/embed/FiK7s_0tGsg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
   </div>
 
   <div class="column media col-xs-3">
     <div class="content">
-      <img src="./assets/images/media_sukitamimesit_1973.jpg" alt="sukitamimesit" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+      <a href="./assets/images/media_sukitamimesit_1973.jpg" data-lightbox="sukitamimesit" data-title="David 1">
+      <img class="img-responsive lightbox-img" src="./assets/images/media_sukitamimesit_1973.jpg" alt="sukitamimesit" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
     </div>
   </div>
   <div class="column media col-xs-3">
     <div class="content">
-      <img src="./assets/images/media_fanclose1975.jpg" alt="fanclose" style="width:100%">
+      <a href="./assets/images/media_fanclose1975.jpg" data-lightbox="fanclose1975" data-title="David 2">
+      <img class="img-responsive lightbox-img" src="./assets/images/media_fanclose1975.jpg" alt="fanclose" style="width:100%">
     </div>
   </div>
   <div class="column media col-xs-3">
     <div class="content">
-      <img src="./assets/images/media_mime1967.jpg" alt="davymime" style="width:100%">
+      <a href="./assets/images/media_mime1967.jpg" data-lightbox="davymime" data-title="David 3">
+      <img class="img-responsive lightbox-img" src="./assets/images/media_mime1967.jpg" alt="davymime" style="width:100%">
     </div>
   </div>
   <div class="column media col-xs-3">
     <div class="content">
+      <a href="./assets/images/media_monoheroes.jpg" data-lightbox="monoheroes" data-title="David 4">
       <img src="./assets/images/media_monoheroes.jpg" alt="monoheroes" style="width:100%">
     </div>
   </div>
@@ -83,11 +87,13 @@
   </div> -->
   <div class="column media col-xs-3">
     <div class="content">
+      <a href="./assets/images/media_pinkhunky_1972.jpg" data-lightbox="pinkhunky_1972" data-title="David 5">
       <img src="./assets/images/media_pinkhunky_1972.jpg" alt="pinkhunky_1972" style="width:100%">
     </div>
   </div>
   <div class="column media col-xs-3">
     <div class="content">
+      <a href="./assets/images/media_siggystool.jpg" data-lightbox="media_siggystool" data-title="David 6">
       <img src="./assets/images/media_siggystool.jpg" alt="media_siggystool" style="width:100%">
     </div>
   </div>
@@ -137,13 +143,8 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <script src="./assets/javascripts/lightbox.min.js"></script>
-    <script>
-        lightbox.option({
-          'resizeDuration': 200,
-          'wrapAround': true
-        })
-    </script>
+    <script src="./assets/javascript/lightbox.js"></script>
+
 
 
 </body>

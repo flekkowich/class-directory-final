@@ -136,14 +136,22 @@ h5{
 
 
 /* Media */
+
+
 .column.media {
     float: left;
-    /* width: 25%;
+    padding: 1%;
+    max-height: 380px;
+   /* width: 25%;
     max-height: 50%; */
     /* background-color: yellow; */
 }
 
 .content.promo {
+  padding-top: 15px;
+  max-height: 450px;
+  /* background-color: yellow; */
+
 }
 
 /* Clear floats after rows */
@@ -192,9 +200,9 @@ padding-left: 15px;
 }
 
 .card.tour {
-  float: left;
-  width: 29%;
-  height: 450px;
+  display: inline-block;
+  width: 25%;
+  height: 375px;
   /* background-color: yellow; */
 }
 
@@ -202,7 +210,7 @@ padding-left: 15px;
   position: absolute;
   bottom: 0%;
   margin: 5%;
-  padding-top: %;
+  padding-top: 2%;
   border-top-style: dotted;
   border-top-width: 1px;
   /* border-color: #646881; */

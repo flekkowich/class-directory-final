@@ -54,34 +54,35 @@
 <div class="container">
 <div class="row">
   <ul class="filterlist col-xs-12">
-  <li><button class="btn active" data-filter="old">Old</button></li>
-  <li><button class="btn" data-filter="new">New</button></li>
+  <li data-filter="old"><button class="btn active">Old</button></li>
+  <li data-filter="new"><button class="btn">New</button></li>
 </ul>
 </div>
+
 
     <!--Gallery  -->
     <div class="row">
       <div class="filtr-container">
-        <div class="filtr-item col-xs-6" data-category="new">
+        <div class="filtr-item col-xs-6" data-category="new" data-sort="value">
           <img class="img-responsive text-center" src="./assets/images/product_promo.png" alt="new">
         </div>
-        <div class="filtr-item col-xs-3" data-category="new">
+        <div class="filtr-item col-xs-3" data-category="new" data-sort="value">
           <img class="img-responsive" src="./assets/images/product_2.png" alt="new" >
         </div>
-      <div class="filtr-item col-xs-3" data-category="new">
+      <div class="filtr-item col-xs-3" data-category="new" data-sort="value">
           <img class="img-responsive" src="./assets/images/product_3.png" alt="new">
       </div>
-        <div class="filtr-item col-xs-3" data-category="old">
+        <div class="filtr-item col-xs-3" data-category="old" data-sort="value">
           <img class="img-responsive" src="./assets/images/product_4.png" alt="old" >
       </div>
-        <div class="filtr-item col-xs-3" data-category="new">
+        <div class="filtr-item col-xs-3" data-category="new" data-sort="value">
           <img class="img-responsive" src="./assets/images/product_1.png" alt="new">
         </div>
       </div>
-        <div class="filtr-item col-xs-3" data-category="old">
+        <div class="filtr-item col-xs-3" data-category="old" data-sort="value">
           <img class="img-responsive" src="./assets/images/product_5.png" alt="old">
       </div>
-        <div class="filtr-item col-xs-3" data-category="new">
+        <div class="filtr-item col-xs-3" data-category="new" data-sort="value">
           <img class="img-responsive" src="./assets/images/product_6.png" alt="new">
       </div>
   </div>
@@ -129,8 +130,6 @@
   </div>
   </footer>
 
-<!-- JAVASCRIPT for filter  -->
-
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -138,9 +137,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="./assets/javascripts/jquery.filterizr.min.js"></script>
     <script>
-    var filterizd = $('.filtr-container').filterizr({});
+    var filterizd = $('.filtr-container').filterizr({
+       //options object
+    });
     </script>
-
 
 
 </body>
