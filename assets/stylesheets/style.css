@@ -138,9 +138,12 @@ h5{
 /* Media */
 .column.media {
     float: left;
-    width: 25%;
-    max-height: 50%;
+    /* width: 25%;
+    max-height: 50%; */
     /* background-color: yellow; */
+}
+
+.content.promo {
 }
 
 /* Clear floats after rows */
@@ -166,8 +169,8 @@ h5{
 
 .content {
   background-color: white;
-  padding: 10px;
-  margin-left: 15%;
+  /* padding: 10px; */
+  /* margin-left: 15%; */
 }
 
 /* TOUR DATES */
