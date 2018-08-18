@@ -148,9 +148,9 @@ h5{
 }
 
 .content.promo {
-  padding-top: 15px;
-  max-height: 450px;
-  /* background-color: yellow; */
+  /* padding-top: 10px; */
+  max-height: 380px;
+  background-color: yellow;
 
 }
 
@@ -257,6 +257,7 @@ padding-left: 15px;
   /* white-space: nowrap;
   overflow: hidden; */
 }
+
 
 /* .slider.col-xs-8 {
   margin: 0%; !Important
@@ -371,4 +372,9 @@ footer li {
 img.social-icon {
 float: center;
 max-height: 16px;
+}
+
+
+.tracks {
+  /* background-color: yellow; */
 }
