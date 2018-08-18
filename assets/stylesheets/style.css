@@ -274,21 +274,26 @@ padding-left: 15px;
 /* SHOP START */
 
 .filtr-item {
-  float: left;
-  background-color: white;
+  /* background-color: blue; */
   padding: 1%;
+
 }
-/*
+
 .filtr-container {
-    width: 100%;
-    max-height: 100px;
-    background-color: yellow;
-} */
+    /* background-color: yellow; */
+}
 
 .filterlist, li {
   display: inline;
   text-align: center;
   padding-right: 30px;
+  /* background-color: yellow; */
+}
+
+img.img-responsive {
+  /* background-color: red; */
+  padding: 2%;
+  display: block;
 }
 
 /* DISCOGRAPHY START */
